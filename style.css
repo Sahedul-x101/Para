@@ -889,3 +889,35 @@ RESPONSIVE
     }
 
 }
+@media(max-width:768px){
+
+    .nav{
+        position:relative;
+    }
+
+    .nav__menu.active{
+
+        display:flex;
+        flex-direction:column;
+        position:absolute;
+        top:60px;
+        right:0;
+
+        width:250px;
+
+        background:white;
+
+        padding:25px;
+
+        border-radius:12px;
+
+        box-shadow:var(--shadow);
+
+    }
+
+    .nav__menu.active a{
+        color:var(--dark);
+    }
+
+}
+
