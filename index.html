@@ -1,435 +1,830 @@
-  <!-- Navigation -->
-  <nav class="nav" role="navigation" aria-label="Main navigation">
-    <!-- Mobile menu button (HTML only) -->
-    <button
-      class="nav__toggle"
-      type="button"
-      aria-controls="primary-navigation"
-      aria-expanded="false"
-      aria-label="Open main menu">
-      <span class="nav__toggle-icon" aria-hidden="true">☰</span>
-    </button>
+<!DOCTYPE html>
+<html lang="en">
 
-    <ul id="primary-navigation" class="nav__list" role="menubar" aria-label="Primary">
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#home">Home</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#history">History</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#culture">Culture</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#gallery">Gallery</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#places">Places</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#map">Map</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#people">People</a></li>
-      <li class="nav__item" role="none"><a role="menuitem" class="nav__link" href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Para Village</title>
 
-<!-- HERO -->
-<section id="home" class="hero" aria-label="Hero — Para introduction">
-  <div class="hero__media">
-    <!-- Hero image placeholder; CSS will supply the cinematic background -->
-    <figure class="hero__figure" aria-hidden="false">
-      <img src="/images/hero-landscape.jpg" alt="Dawn over terraced fields and a slow river near Para village" class="hero__image" />
-      <figcaption class="hero__figcaption">Early morning light on the river that runs through Para</figcaption>
-    </figure>
+  <meta name="description"
+    content="Discover the history, culture, traditions, landmarks, and beauty of Para Village.">
 
-    <!-- Overlay wrapper for mood & color layers -->
-    <div class="hero__overlay" aria-hidden="true"></div>
-  </div>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <div class="hero__content container">
-    <p class="hero__eyebrow">Welcome to</p>
-    <h1 class="hero__title">Where Rivers Remember Names</h1>
-    <p class="hero__lead">Every sunrise touches the same fields our ancestors walked, carrying stories from one generation to the next. Walk slowly — the land remembers you too.</p>
+<body>
 
-    <div class="hero__actions">
-      <button class="button button--primary" type="button" aria-label="Explore the Village">Explore the Village</button>
-      <button class="button button--secondary" type="button" aria-label="View History">View History</button>
-    </div>
+<!-- ===================================================
+HEADER
+=================================================== -->
 
-    <!-- Decorative elements and scroll indicator -->
-    <div class="hero__decor" aria-hidden="true">
-      <span class="hero__leaf">🍃</span>
-      <span class="hero__sun">🌅</span>
-    </div>
+<header class="header">
 
-    <a href="#about" class="hero__scroll-indicator" aria-label="Scroll to About the Village">
-      <span class="hero__scroll-text">Scroll</span>
-      <span class="hero__scroll-icon" aria-hidden="true">⌄</span>
+  <div class="container">
+
+    <!-- Logo -->
+
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="Para Village Logo">
+      <span>Para Village</span>
     </a>
+
+    <!-- Navigation -->
+
+    <nav class="nav">
+
+      <button
+        class="nav__toggle"
+        aria-expanded="false"
+        aria-label="Open Navigation">
+
+        ☰
+
+      </button>
+
+      <ul class="nav__menu">
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#history">History</a></li>
+
+        <li><a href="#culture">Culture</a></li>
+
+        <li><a href="#gallery">Gallery</a></li>
+
+        <li><a href="#places">Places</a></li>
+
+        <li><a href="#map">Map</a></li>
+
+        <li><a href="#stats">Statistics</a></li>
+
+        <li><a href="#people">People</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </nav>
+
   </div>
+
+</header>
+
+<!-- ===================================================
+MAIN
+=================================================== -->
+
+<main>
+
+<!-- ===================================================
+HERO
+=================================================== -->
+
+<section id="home" class="hero">
+
+  <img
+    src="images/hero-landscape.jpg"
+    alt="Beautiful view of Para Village"
+    class="hero__image">
+
+  <div class="hero__overlay"></div>
+
+  <div class="container hero__content">
+
+    <p class="hero__eyebrow">
+      Welcome to
+    </p>
+
+    <h1 class="hero__title">
+      Where Rivers Remember Names
+    </h1>
+
+    <p class="hero__description">
+
+      Every sunrise touches the same fields our ancestors walked.
+
+      Discover a place where traditions, stories, and nature continue
+      to shape everyday life.
+
+    </p>
+
+    <div class="hero__buttons">
+
+      <a href="#about" class="button button--primary">
+        Explore Village
+      </a>
+
+      <a href="#history" class="button button--secondary">
+        Learn History
+      </a>
+
+    </div>
+
+    <a href="#about" class="hero__scroll">
+
+      Scroll Down
+
+    </a>
+
+  </div>
+
 </section>
 
-<!-- About the Village -->
-<section id="about" class="about container" aria-labelledby="about-heading">
-  <header class="section__header">
-    <h2 id="about-heading" class="section__title">About Para</h2>
-    <p class="section__subtitle">A place shaped by water, weather, and the people who stay.</p>
-  </header>
+<!-- ===================================================
+ABOUT
+=================================================== -->
 
-  <div class="about__grid">
-    <article class="about__text">
-      <h3 class="about__heading">A Quiet Place, A Living Story</h3>
-      <p>Para sits at the bend of a slow river and beneath a ridge of low hills. Its homes cluster around the market lane; its children learn songs that speak the names of seasons. Life here is stitched by daily rituals — the call to work, the shared bread, the festivals that light whole nights.</p>
-      <p>The village holds both small ordinary days and the long arc of memory: births, harvests, and the stories that pass from one table to the next. There is pride in what is preserved and tenderness for what slips away.</p>
+<section id="about" class="about">
 
-      <aside class="about__aside" aria-label="Quick facts about Para">
-        <h4 class="about__aside-title">Quick facts</h4>
+  <div class="container">
+
+    <div class="section-heading">
+
+      <span>About</span>
+
+      <h2>About Para Village</h2>
+
+      <p>
+
+        A peaceful village surrounded by rivers, green fields,
+        and generations of memories.
+
+      </p>
+
+    </div>
+
+    <div class="about__grid">
+
+      <!-- Left -->
+
+      <div class="about__content">
+
+        <h3>
+          A Living Story
+        </h3>
+
+        <p>
+
+          Para is more than a village.
+
+          It is a place where families have lived together for centuries,
+          preserving traditions through farming, festivals,
+          education, and community life.
+
+        </p>
+
+        <p>
+
+          The river has always been the heart of the village,
+          bringing people together and supporting everyday life.
+
+        </p>
+
         <ul class="about__facts">
-          <li class="about__fact"><strong>Founded:</strong> over 300 years ago</li>
-          <li class="about__fact"><strong>Landscape:</strong> river plains, terraced fields, low cedar ridge</li>
-          <li class="about__fact"><strong>Community:</strong> farming families, artisans, teachers</li>
+
+          <li>
+            <strong>Founded:</strong>
+            300+ Years Ago
+          </li>
+
+          <li>
+            <strong>Landscape:</strong>
+            River, Fields & Hills
+          </li>
+
+          <li>
+            <strong>Population:</strong>
+            3,240+
+          </li>
+
+          <li>
+            <strong>Main Occupation:</strong>
+            Farming & Handicrafts
+          </li>
+
         </ul>
-      </aside>
-    </article>
 
-    <figure class="about__figure">
-      <img src="/images/about-house.jpg" alt="An old mud-brick house with carved wooden shutters in Para" class="about__image" />
-      <figcaption class="about__caption">An evening in Para, where doors are often opened to neighbors.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<!-- History -->
-<section id="history" class="history container" aria-labelledby="history-heading">
-  <header class="section__header">
-    <h2 id="history-heading" class="section__title">History</h2>
-    <p class="section__subtitle">Milestones, memories, and the slow shaping of place</p>
-  </header>
-
-  <ol class="timeline" aria-label="Historical timeline of Para">
-    <li class="timeline__item">
-      <article class="timeline__card" aria-labelledby="event-one-title">
-        <time class="timeline__date" datetime="1724">1724</time>
-        <h3 id="event-one-title" class="timeline__title">Founding of the Terrace Fields</h3>
-        <p class="timeline__summary">Families settled the river terrace and began carving the fields that would feed generations. The first stone well marks the oldest boundary still known in the village.</p>
-        <figure class="timeline__media">
-          <img src="/images/history-terrace.jpg" alt="Antique map sketch showing early terraces of Para" />
-          <figcaption>Early terrace outlines preserved in oral maps</figcaption>
-        </figure>
-      </article>
-    </li>
-
-    <li class="timeline__item">
-      <article class="timeline__card" aria-labelledby="event-two-title">
-        <time class="timeline__date" datetime="1850">1850</time>
-        <h3 id="event-two-title" class="timeline__title">The Market Lane Forms</h3>
-        <p class="timeline__summary">As trade grew between neighboring villages, a lane of stalls and gatherings became a center of exchange — of goods, news, and songs.</p>
-        <figure class="timeline__media">
-          <img src="/images/history-market.jpg" alt="Black-and-white photograph of market life in Para from the 19th century" />
-          <figcaption>Market lane at dawn, a century ago</figcaption>
-        </figure>
-      </article>
-    </li>
-
-    <li class="timeline__item">
-      <article class="timeline__card" aria-labelledby="event-three-title">
-        <time class="timeline__date" datetime="1952">1952</time>
-        <h3 id="event-three-title" class="timeline__title">The Riverside School Opens</h3>
-        <p class="timeline__summary">A small school opened near the river, bringing new teachings while keeping old stories. Many of Para’s teachers today trace their lineage to that first classroom.</p>
-        <figure class="timeline__media">
-          <img src="/images/history-school.jpg" alt="A 1950s classroom with children in Para" />
-          <figcaption>First headmaster and a classroom of eager children</figcaption>
-        </figure>
-      </article>
-    </li>
-
-    <li class="timeline__item">
-      <article class="timeline__card" aria-labelledby="event-four-title">
-        <time class="timeline__date" datetime="1998">1998</time>
-        <h3 id="event-four-title" class="timeline__title">A Year of Harvest and Renewal</h3>
-        <p class="timeline__summary">A sustained harvest and renewed communal projects — from the irrigation channel to the cedar grove — marked a season of shared renewal.</p>
-        <figure class="timeline__media">
-          <img src="/images/history-harvest.jpg" alt="Villagers celebrating the harvest at sunset" />
-          <figcaption>Harvest day, music, and lanterns</figcaption>
-        </figure>
-      </article>
-    </li>
-  </ol>
-</section>
-
-<!-- Culture & Traditions -->
-<section id="culture" class="culture container" aria-labelledby="culture-heading">
-  <header class="section__header">
-    <h2 id="culture-heading" class="section__title">Culture & Traditions</h2>
-    <p class="section__subtitle">Gatherings, tastes, and crafts that weave community</p>
-  </header>
-
-  <div class="culture__cards" role="list">
-    <article class="card card--festival" role="listitem" aria-labelledby="festival-title">
-      <figure class="card__media">
-        <img src="/images/culture-festival.jpg" alt="Lanterns and dancers at the spring festival in Para" />
-        <figcaption>Spring Festival: lanterns at dusk</figcaption>
-      </figure>
-      <div class="card__content">
-        <h3 id="festival-title" class="card__title">Festivals</h3>
-        <p class="card__text">Seasonal festivals are the village’s heartbeat: nights of dance, shared meals, and songs that call the river by its old names.</p>
       </div>
-    </article>
 
-    <article class="card card--food" role="listitem" aria-labelledby="food-title">
-      <figure class="card__media">
-        <img src="/images/culture-food.jpg" alt="A communal meal with flatbread and stewed greens" />
-        <figcaption>Local food: bread shared at community tables</figcaption>
-      </figure>
-      <div class="card__content">
-        <h3 id="food-title" class="card__title">Local Food</h3>
-        <p class="card__text">Recipes are passed hand-to-hand: hearty stews, river fish, and a flatbread with a name for every family who bakes it.</p>
+      <!-- Right -->
+
+      <div class="about__image">
+
+        <img
+          src="images/about-house.jpg"
+          alt="Traditional house in Para Village">
+
       </div>
-    </article>
 
-    <article class="card card--music" role="listitem" aria-labelledby="music-title">
-      <figure class="card__media">
-        <img src="/images/culture-music.jpg" alt="An elder playing a small stringed instrument at twilight" />
-        <figcaption>Music: an elder keeps time with a three-stringed lute</figcaption>
-      </figure>
-      <div class="card__content">
-        <h3 id="music-title" class="card__title">Music</h3>
-        <p class="card__text">Songs carry names and weather patterns; they are sung in the fields and at gatherings, sometimes without words — just a remembered melody.</p>
-      </div>
-    </article>
-
-    <article class="card card--craft" role="listitem" aria-labelledby="craft-title">
-      <figure class="card__media">
-        <img src="/images/culture-craft.jpg" alt="Handwoven baskets and carved wooden spoons from Para craftsmen" />
-        <figcaption>Handicrafts made from river reeds and cedar</figcaption>
-      </figure>
-      <div class="card__content">
-        <h3 id="craft-title" class="card__title">Handicrafts</h3>
-        <p class="card__text">Baskets, carved spoons, and painted ceramics — everyday objects treated with care and meaning, sold at the market and kept as gifts.</p>
-      </div>
-    </article>
-
-    <article class="card card--daily" role="listitem" aria-labelledby="daily-title">
-      <figure class="card__media">
-        <img src="/images/culture-daily.jpg" alt="Children walking along a river path at sunrise" />
-        <figcaption>Daily life: paths worn by generations</figcaption>
-      </figure>
-      <div class="card__content">
-        <h3 id="daily-title" class="card__title">Daily Life</h3>
-        <p class="card__text">A rhythm of chores, greetings at the well, everyone knowing most others by name. Here, small routines form a quiet architecture of care.</p>
-      </div>
-    </article>
-  </div>
-</section>
-
-<!-- Gallery Preview -->
-<section id="gallery" class="gallery container" aria-labelledby="gallery-heading">
-  <header class="section__header">
-    <h2 id="gallery-heading" class="section__title">Gallery</h2>
-    <p class="section__subtitle">Cinematic moments from the river, ridge, and the people between</p>
-  </header>
-
-  <div class="gallery__grid">
-    <figure class="gallery__item gallery__item--landscape">
-      <img src="/images/gallery-landscape-1.jpg" alt="Wide view of the river at golden hour with fishermen in small boats" />
-      <figcaption>River at golden hour</figcaption>
-    </figure>
-
-    <figure class="gallery__item gallery__item--landscape">
-      <img src="/images/gallery-landscape-2.jpg" alt="Mist rising from terraced fields in early morning" />
-      <figcaption>Mist over the terraces</figcaption>
-    </figure>
-
-    <figure class="gallery__item gallery__item--portrait">
-      <img src="/images/gallery-portrait-1.jpg" alt="A potter shaping clay beside the market lane" />
-      <figcaption>Hand at work</figcaption>
-    </figure>
-
-    <figure class="gallery__item gallery__item--portrait">
-      <img src="/images/gallery-portrait-2.jpg" alt="An elder smiling with a carved walking stick" />
-      <figcaption>Portrait of an elder</figcaption>
-    </figure>
-  </div>
-
-  <div class="gallery__cta">
-    <button class="button button--primary" type="button" aria-label="View full gallery">View Full Gallery</button>
-  </div>
-</section>
-
-<!-- Interactive Map Preview -->
-<section id="map" class="map container" aria-labelledby="map-heading">
-  <header class="section__header">
-    <h2 id="map-heading" class="section__title">Map</h2>
-    <p class="section__subtitle">Trace the river, the lanes, and the places that matter</p>
-  </header>
-
-  <div class="map__layout">
-    <div class="map__text">
-      <p>Our interactive map guides you along the river’s bend, marking schools, old wells, and the trees that hold neighborhood names. Each pin carries a story, a photograph, and a voice.</p>
-      <p>Explore the routes people travel, the sites of seasonal festivals, and the places where time seems to linger.</p>
-
-      <button class="button button--primary" type="button" aria-label="Explore the Map">Explore the Map</button>
     </div>
 
-    <figure class="map__figure" role="region" aria-label="Map preview of Para">
-      <img src="/images/map-placeholder.png" alt="Illustrated map placeholder showing river, main lane, market, and key landmarks" />
-      <figcaption>Map preview — interactive map coming soon</figcaption>
-    </figure>
   </div>
+
+</section>
+<!-- ===================================================
+HISTORY
+=================================================== -->
+
+<section id="history" class="history">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>History</span>
+
+            <h2>Our History</h2>
+
+            <p>
+                Discover the journey of Para Village through the centuries.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline__item">
+
+                <span class="timeline__year">1724</span>
+
+                <div class="timeline__content">
+
+                    <h3>Village Founded</h3>
+
+                    <p>
+                        The first families settled along the river and began
+                        cultivating fertile land.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline__item">
+
+                <span class="timeline__year">1850</span>
+
+                <div class="timeline__content">
+
+                    <h3>Market Established</h3>
+
+                    <p>
+                        The local market became an important center for trade
+                        between neighboring villages.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline__item">
+
+                <span class="timeline__year">1952</span>
+
+                <div class="timeline__content">
+
+                    <h3>Village School Opened</h3>
+
+                    <p>
+                        Education became an essential part of community life.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline__item">
+
+                <span class="timeline__year">1998</span>
+
+                <div class="timeline__content">
+
+                    <h3>Community Development</h3>
+
+                    <p>
+                        Roads, irrigation, and public spaces were improved.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- Important Places -->
-<section id="places" class="places container" aria-labelledby="places-heading">
-  <header class="section__header">
-    <h2 id="places-heading" class="section__title">Important Places</h2>
-    <p class="section__subtitle">Sites that shape daily life and shared memory</p>
-  </header>
+<!-- ===================================================
+CULTURE
+=================================================== -->
 
-  <div class="places__grid">
-    <article class="place-card" aria-labelledby="place-school">
-      <figure class="place-card__media">
-        <img src="/images/place-school.jpg" alt="Riverside School building with children playing in front" />
-        <figcaption>Riverside School</figcaption>
-      </figure>
-      <div class="place-card__content">
-        <h3 id="place-school" class="place-card__title">Riverside School</h3>
-        <p class="place-card__text">A humble building where generations learned both letters and songs; the courtyard still echoes with morning recitals.</p>
-        <button class="button button--tertiary" type="button" aria-label="Learn more about Riverside School">Learn More</button>
-      </div>
-    </article>
+<section id="culture" class="culture">
 
-    <article class="place-card" aria-labelledby="place-temple">
-      <figure class="place-card__media">
-        <img src="/images/place-temple.jpg" alt="A small temple with hanging jasmine garlands" />
-        <figcaption>Temple of the Cedar</figcaption>
-      </figure>
-      <div class="place-card__content">
-        <h3 id="place-temple" class="place-card__title">Temple / Mosque</h3>
-        <p class="place-card__text">A quiet place of gathering and solace, where offerings are made and elders meet to remember names with cups of tea.</p>
-        <button class="button button--tertiary" type="button" aria-label="Learn more about the Temple or Mosque">Learn More</button>
-      </div>
-    </article>
+    <div class="container">
 
-    <article class="place-card" aria-labelledby="place-river">
-      <figure class="place-card__media">
-        <img src="/images/place-river.jpg" alt="The river's bend with stone steps leading to the water" />
-        <figcaption>The River Bend</figcaption>
-      </figure>
-      <div class="place-card__content">
-        <h3 id="place-river" class="place-card__title">The River</h3>
-        <p class="place-card__text">The village’s slow, steady vein. It is used for watering fields, washing, and sometimes for small boats that carry people and fish.</p>
-        <button class="button button--tertiary" type="button" aria-label="Learn more about the River">Learn More</button>
-      </div>
-    </article>
+        <div class="section-heading">
 
-    <article class="place-card" aria-labelledby="place-market">
-      <figure class="place-card__media">
-        <img src="/images/place-market.jpg" alt="Stalls lined with spices, textiles, and baskets at the marketplace" />
-        <figcaption>The Market</figcaption>
-      </figure>
-      <div class="place-card__content">
-        <h3 id="place-market" class="place-card__title">Market Lane</h3>
-        <p class="place-card__text">Where goods and news change hands; a meeting place of morning and evening and sometimes the stage for celebration.</p>
-        <button class="button button--tertiary" type="button" aria-label="Learn more about the Market Lane">Learn More</button>
-      </div>
-    </article>
+            <span>Culture</span>
 
-    <article class="place-card" aria-labelledby="place-historic">
-      <figure class="place-card__media">
-        <img src="/images/place-historic.jpg" alt="Stone marker with carvings beside an old path" />
-        <figcaption>Old Stone Marker</figcaption>
-      </figure>
-      <div class="place-card__content">
-        <h3 id="place-historic" class="place-card__title">Historical Site</h3>
-        <p class="place-card__text">An old marker and a few ruined steps — the touchstones of older tales that still guide seasons and names.</p>
-        <button class="button button--tertiary" type="button" aria-label="Learn more about the Historical Site">Learn More</button>
-      </div>
-    </article>
-  </div>
+            <h2>Traditions & Lifestyle</h2>
+
+        </div>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <img src="images/culture-festival.jpg" alt="Festival">
+
+                <h3>Festivals</h3>
+
+                <p>
+                    Seasonal celebrations filled with music, dance,
+                    and traditional food.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/culture-food.jpg" alt="Food">
+
+                <h3>Local Food</h3>
+
+                <p>
+                    Homemade recipes passed down through generations.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/culture-music.jpg" alt="Music">
+
+                <h3>Music</h3>
+
+                <p>
+                    Folk songs that preserve memories and traditions.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/culture-craft.jpg" alt="Craft">
+
+                <h3>Handicrafts</h3>
+
+                <p>
+                    Beautiful handmade baskets, pottery,
+                    and wood carvings.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
 </section>
 
-<!-- Village Statistics -->
-<section id="stats" class="stats container" aria-labelledby="stats-heading">
-  <header class="section__header">
-    <h2 id="stats-heading" class="section__title">Village at a Glance</h2>
-    <p class="section__subtitle">Numbers that tell a quiet story</p>
-  </header>
+<!-- ===================================================
+GALLERY
+=================================================== -->
 
-  <div class="stats__grid" role="list">
-    <div class="stat-card" role="listitem" aria-labelledby="stat-population">
-      <h3 id="stat-population" class="stat-card__number">3,240</h3>
-      <p class="stat-card__label">Population</p>
+<section id="gallery" class="gallery">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Gallery</span>
+
+            <h2>Village Moments</h2>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <img src="images/gallery1.jpg" alt="Gallery Image">
+
+            <img src="images/gallery2.jpg" alt="Gallery Image">
+
+            <img src="images/gallery3.jpg" alt="Gallery Image">
+
+            <img src="images/gallery4.jpg" alt="Gallery Image">
+
+            <img src="images/gallery5.jpg" alt="Gallery Image">
+
+            <img src="images/gallery6.jpg" alt="Gallery Image">
+
+        </div>
+
     </div>
 
-    <div class="stat-card" role="listitem" aria-labelledby="stat-families">
-      <h3 id="stat-families" class="stat-card__number">620</h3>
-      <p class="stat-card__label">Families</p>
-    </div>
-
-    <div class="stat-card" role="listitem" aria-labelledby="stat-schools">
-      <h3 id="stat-schools" class="stat-card__number">2</h3>
-      <p class="stat-card__label">Schools</p>
-    </div>
-
-    <div class="stat-card" role="listitem" aria-labelledby="stat-farmland">
-      <h3 id="stat-farmland" class="stat-card__number">1,100 ha</h3>
-      <p class="stat-card__label">Farmland</p>
-    </div>
-
-    <div class="stat-card" role="listitem" aria-labelledby="stat-years">
-      <h3 id="stat-years" class="stat-card__number">300+</h3>
-      <p class="stat-card__label">Years of History</p>
-    </div>
-  </div>
 </section>
 
-<!-- Memories & Testimonials -->
-<section id="people" class="testimonials container" aria-labelledby="people-heading">
-  <header class="section__header">
-    <h2 id="people-heading" class="section__title">Memories & Testimonials</h2>
-    <p class="section__subtitle">Voices of Para</p>
-  </header>
+<!-- ===================================================
+IMPORTANT PLACES
+=================================================== -->
 
-  <div class="testimonials__list">
-    <figure class="testimonial" aria-label="Testimonial from Amina">
-      <img class="testimonial__avatar" src="/images/avatar-amina.jpg" alt="Portrait of Amina, a potter from Para" />
-      <figcaption class="testimonial__meta">
-        <strong class="testimonial__name">Amina</strong>
-        <span class="testimonial__role">Potter</span>
-      </figcaption>
-      <blockquote class="testimonial__quote" cite="https://example.com/people/amina">
-        "I learned the song for the river before I could read. It taught me when to plant and when to listen. Even now, when I shape clay, I hum the same tune."
-      </blockquote>
-    </figure>
+<section id="places" class="places">
 
-    <figure class="testimonial" aria-label="Testimonial from Rahim">
-      <img class="testimonial__avatar" src="/images/avatar-rahim.jpg" alt="Portrait of Rahim, a school teacher" />
-      <figcaption class="testimonial__meta">
-        <strong class="testimonial__name">Rahim</strong>
-        <span class="testimonial__role">Teacher</span>
-      </figcaption>
-      <blockquote class="testimonial__quote" cite="https://example.com/people/rahim">
-        "Children ask about the old well and I tell them who built it. They smile at names that are older than them; they carry those names forward like small lanterns."
-      </blockquote>
-    </figure>
+    <div class="container">
 
-    <figure class="testimonial" aria-label="Testimonial from Fatima">
-      <img class="testimonial__avatar" src="/images/avatar-fatima.jpg" alt="Portrait of Fatima, a market vendor" />
-      <figcaption class="testimonial__meta">
-        <strong class="testimonial__name">Fatima</strong>
-        <span class="testimonial__role">Market Vendor</span>
-      </figcaption>
-      <blockquote class="testimonial__quote" cite="https://example.com/people/fatima">
-        "The market is where we exchange more than goods. We exchange stories, recipes, weather news — everything you need to feel you belong."
-      </blockquote>
-    </figure>
-  </div>
-</section>
+        <div class="section-heading">
 
-<!-- Call to Action -->
-<section class="call-to-action container" aria-labelledby="cta-heading">
-  <header class="section__header">
-    <h2 id="cta-heading" class="section__title">Start Your Journey</h2>
-    <p class="section__subtitle">Step into stories, places, and the slow songs of Para</p>
-  </header>
+            <span>Places</span>
 
-  <div class="call-to-action__content">
-    <p class="call-to-action__text">There are paths to follow and people to meet. If you stay a while, the village will find a way to speak to you. Begin at a lane, a riverbank, or a kitchen table.</p>
+            <h2>Important Places</h2>
 
-    <div class="call-to-action__actions">
-      <button class="button button--primary" type="button" aria-label="Start Exploring">Start Exploring</button>
-      <button class="button button--secondary" type="button" aria-label="View Gallery">View Gallery</button>
+        </div>
+
+        <div class="cards">
+
+            <article class="card">
+
+                <img src="images/place-school.jpg" alt="School">
+
+                <h3>Village School</h3>
+
+                <p>
+                    The heart of education for generations of children.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/place-mosque.jpg" alt="Mosque">
+
+                <h3>Mosque / Temple</h3>
+
+                <p>
+                    A peaceful place where the community gathers.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/place-market.jpg" alt="Market">
+
+                <h3>Market</h3>
+
+                <p>
+                    A vibrant marketplace for local products and crafts.
+                </p>
+
+            </article>
+
+            <article class="card">
+
+                <img src="images/place-river.jpg" alt="River">
+
+                <h3>River</h3>
+
+                <p>
+                    The lifeline of the village, supporting farming
+                    and daily life.
+                </p>
+
+            </article>
+
+        </div>
+
     </div>
-  </div>
+
 </section>
+<!-- ===================================================
+MAP
+=================================================== -->
+
+<section id="map" class="map">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Map</span>
+
+            <h2>Explore Para Village</h2>
+
+            <p>
+                Find important landmarks, roads, rivers,
+                schools, markets, and historic locations.
+            </p>
+
+        </div>
+
+        <div class="map__content">
+
+            <img
+                src="images/map-placeholder.jpg"
+                alt="Map of Para Village">
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+STATISTICS
+=================================================== -->
+
+<section id="stats" class="stats">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Statistics</span>
+
+            <h2>Village at a Glance</h2>
+
+        </div>
+
+        <div class="stats-grid">
+
+            <div class="stat-card">
+
+                <h3>3,240+</h3>
+
+                <p>Population</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>620</h3>
+
+                <p>Families</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>2</h3>
+
+                <p>Schools</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>1100 ha</h3>
+
+                <p>Farmland</p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>300+</h3>
+
+                <p>Years of History</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+TESTIMONIALS
+=================================================== -->
+
+<section id="people" class="testimonials">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>People</span>
+
+            <h2>Voices of Para</h2>
+
+        </div>
+
+        <div class="testimonial-grid">
+
+            <article class="testimonial">
+
+                <img
+                    src="images/avatar-amina.jpg"
+                    alt="Amina">
+
+                <h3>Amina</h3>
+
+                <span>Potter</span>
+
+                <p>
+                    "The river has always been part of my life.
+                    Every piece of pottery carries a memory."
+                </p>
+
+            </article>
+
+            <article class="testimonial">
+
+                <img
+                    src="images/avatar-rahim.jpg"
+                    alt="Rahim">
+
+                <h3>Rahim</h3>
+
+                <span>Teacher</span>
+
+                <p>
+                    "Education helps preserve our traditions
+                    while preparing children for the future."
+                </p>
+
+            </article>
+
+            <article class="testimonial">
+
+                <img
+                    src="images/avatar-fatima.jpg"
+                    alt="Fatima">
+
+                <h3>Fatima</h3>
+
+                <span>Market Vendor</span>
+
+                <p>
+                    "The market is where everyone meets.
+                    It keeps the village connected."
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+CALL TO ACTION
+=================================================== -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <h2>Start Your Journey</h2>
+
+        <p>
+
+            Discover the beauty, history,
+            and traditions of Para Village.
+
+        </p>
+
+        <div class="cta-buttons">
+
+            <a href="#gallery" class="button">
+                View Gallery
+            </a>
+
+            <a href="#contact" class="button button-outline">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+CONTACT
+=================================================== -->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <span>Contact</span>
+
+            <h2>Get in Touch</h2>
+
+        </div>
+
+        <form class="contact-form">
+
+            <input
+                type="text"
+                placeholder="Your Name"
+                required>
+
+            <input
+                type="email"
+                placeholder="Email Address"
+                required>
+
+            <textarea
+                placeholder="Your Message"
+                rows="6"></textarea>
+
+            <button type="submit" class="button">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<!-- ===================================================
+FOOTER
+=================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h3>Para Village</h3>
+
+                <p>
+
+                    Preserving our history,
+                    celebrating our culture,
+                    and sharing our stories.
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#history">History</a></li>
+
+                    <li><a href="#gallery">Gallery</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <ul>
+
+                    <li><a href="#">Facebook</a></li>
+
+                    <li><a href="#">Instagram</a></li>
+
+                    <li><a href="#">YouTube</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+
+            © 2026 Para Village. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+</main>
+
+</body>
+
+</html>
