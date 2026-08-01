@@ -463,3 +463,368 @@ section{
     }
 
 }
+/* ==========================================================
+   SECTION HEADERS
+========================================================== */
+
+.section-title{
+
+    font-family:Georgia,serif;
+
+    font-size:clamp(2rem,5vw,3.5rem);
+
+    margin-bottom:.75rem;
+
+    color:var(--forest);
+
+    position:relative;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:2px;
+
+    background:var(--gold);
+
+    margin-top:14px;
+
+}
+
+.section-subtitle{
+
+    color:var(--ink-light);
+
+    margin-bottom:3rem;
+
+    max-width:650px;
+
+}
+
+/* ==========================================================
+   RETRO WINDOW
+========================================================== */
+
+.archive-window{
+
+    background:var(--window);
+
+    border:2px solid var(--line);
+
+    border-radius:18px;
+
+    padding:2rem;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:2rem;
+
+    transition:.35s;
+
+}
+
+.archive-window:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* ==========================================================
+   ABOUT + HISTORY
+========================================================== */
+
+.two-column{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:2rem;
+
+    align-items:center;
+
+}
+
+.two-column img{
+
+    border-radius:14px;
+
+    border:2px solid var(--line);
+
+}
+
+.two-column p{
+
+    color:var(--ink-light);
+
+}
+
+/* ==========================================================
+   CULTURE CARDS
+========================================================== */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:1.5rem;
+
+}
+
+.retro-card{
+
+    background:var(--window);
+
+    border:2px solid var(--line);
+
+    border-radius:18px;
+
+    padding:1.5rem;
+
+    transition:.35s;
+
+}
+
+.retro-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:var(--forest);
+
+}
+
+.retro-card h3{
+
+    margin-bottom:1rem;
+
+    color:var(--forest);
+
+    font-family:Georgia,serif;
+
+}
+
+.retro-card p{
+
+    color:var(--ink-light);
+
+}
+
+/* ==========================================================
+   GALLERY
+========================================================== */
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:1.2rem;
+
+}
+
+.gallery img{
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:16px;
+
+    border:2px solid var(--line);
+
+    transition:.4s;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.04);
+
+    filter:brightness(1.05);
+
+}
+
+/* ==========================================================
+   PLACES
+========================================================== */
+
+.place{
+
+    display:flex;
+
+    gap:1.25rem;
+
+    margin-bottom:2rem;
+
+    align-items:center;
+
+}
+
+.place img{
+
+    width:140px;
+
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    border:2px solid var(--line);
+
+}
+
+.place h3{
+
+    color:var(--forest);
+
+    margin-bottom:.5rem;
+
+    font-family:Georgia,serif;
+
+}
+
+/* ==========================================================
+   MAP
+========================================================== */
+
+.map-box{
+
+    border:2px solid var(--line);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+footer{
+
+    background:var(--forest-dark);
+
+    color:#f8f6ef;
+
+    padding:4rem 0;
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    font-family:Georgia,serif;
+
+    margin-bottom:1rem;
+
+}
+
+footer p{
+
+    opacity:.85;
+
+}
+
+.footer-meta{
+
+    margin-top:2rem;
+
+    font-size:.9rem;
+
+    opacity:.7;
+
+}
+
+/* ==========================================================
+   RETRO BADGES
+========================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:.35rem .8rem;
+
+    border:1px solid var(--line);
+
+    border-radius:999px;
+
+    background:#fdf8ee;
+
+    margin:.25rem;
+
+    font-size:.85rem;
+
+}
+
+/* ==========================================================
+   SCROLL REVEAL
+========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:1s;
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:none;
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width:768px){
+
+    .two-column{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .place{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .place img{
+
+        width:100%;
+
+        height:220px;
+
+    }
+
+    .section-title{
+
+        font-size:2.2rem;
+
+    }
+
+}
